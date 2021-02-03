@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.Google_Selenium2.SearchImdbTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-02-03T15:16:15" hostname="ubuntu" time="37.907">
+  <properties/>
+  <testcase name="searchimdb()" classname="com.example.Google_Selenium2.SearchImdbTest" time="37.907"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[1612365375805	geckodriver	INFO	Listening on 127.0.0.1:29414
+1612365375838	mozrunner::runner	INFO	Running command: "/usr/lib/firefox/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileRsrOvv"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1612365380819	Marionette	INFO	Listening on port 38365
+1612365380952	Marionette	WARN	TLS certificate errors will be ignored for this session
+Feb 03, 2021 4:16:21 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+1612365404928	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:235:19
+TimedPromise@chrome://marionette/content/sync.js:220:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:418:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1612365412115	Marionette	INFO	Stopped listening on port 38365
+JavaScript error: https://m.media-amazon.com/images/S/sash/wDqcPWN-$punknn.js, line 94: NS_ERROR_NOT_INITIALIZED: 
+]]></system-err>
+</testsuite>

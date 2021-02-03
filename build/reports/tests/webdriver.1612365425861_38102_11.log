@@ -1,0 +1,24 @@
+1612365425908	geckodriver	INFO	Listening on 127.0.0.1:1876
+1612365425961	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiletVYgOM"
+*** You are running in headless mode.
+
+(firefox:39514): GLib-GObject-WARNING **: 16:17:06.757: invalid (NULL) pointer instance
+
+(firefox:39514): GLib-GObject-CRITICAL **: 16:17:06.757: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib/firefox/firefox:39752): GLib-GObject-WARNING **: 16:17:07.479: invalid (NULL) pointer instance
+
+(/usr/lib/firefox/firefox:39752): GLib-GObject-CRITICAL **: 16:17:07.479: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib/firefox/firefox:39769): GLib-GObject-WARNING **: 16:17:07.739: invalid (NULL) pointer instance
+
+(/usr/lib/firefox/firefox:39769): GLib-GObject-CRITICAL **: 16:17:07.739: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:39832): GLib-GObject-WARNING **: 16:17:11.114: invalid (NULL) pointer instance
+
+(/usr/lib/firefox/firefox:39832): GLib-GObject-CRITICAL **: 16:17:11.114: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1612365431173	Marionette	INFO	Listening on port 44799
+1612365431226	Marionette	WARN	TLS certificate errors will be ignored for this session
+1612365436694	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1612365452506	Marionette	INFO	Stopped listening on port 44799

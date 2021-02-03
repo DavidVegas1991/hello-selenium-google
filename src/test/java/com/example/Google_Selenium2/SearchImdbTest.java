@@ -42,7 +42,7 @@ public class SearchImdbTest {
         driver.get("https://www.imdb.com/");
 
         // 2 | setWindowSize | 858x859 |
-        driver.manage().window().setSize(new Dimension(858, 859));
+        //driver.manage().window().setSize(new Dimension(858, 859));
 
         // 3 | type | id=suggestion-search | wandavision
         driver.findElement(By.id("suggestion-search")).sendKeys("wandavision");
