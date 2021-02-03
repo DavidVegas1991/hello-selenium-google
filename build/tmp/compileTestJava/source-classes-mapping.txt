@@ -1,0 +1,8 @@
+com/example/Google_Selenium2/SearchTestGoogle.java
+ com.example.Google_Selenium2.SearchTestGoogle
+com/example/Google_Selenium2/MainPageTest.java
+ com.example.Google_Selenium2.MainPageTest
+com/example/Google_Selenium2/SearchImdbTest.java
+ com.example.Google_Selenium2.SearchImdbTest
+com/example/Google_Selenium2/Robobar1Test.java
+ com.example.Google_Selenium2.Robobar1Test
