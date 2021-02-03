@@ -40,7 +40,7 @@ public class MainPageTest {
 
         $(byClassName("js-search-input")).shouldHave(attribute("value", "Selenium"));
     }
-
+/*
     @Test
     public void toolsMenu() {
         mainPage.toolsMenu.hover();
@@ -55,5 +55,5 @@ public class MainPageTest {
         $(byClassName("products-list")).shouldBe(visible);
 
         assertEquals("All Developer Tools and Products by JetBrains", Selenide.title());
-    }
+    }*/
 }

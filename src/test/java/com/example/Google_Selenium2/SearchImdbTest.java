@@ -5,14 +5,13 @@ package com.example.Google_Selenium2;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.time.Duration;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
@@ -26,7 +25,7 @@ public class SearchImdbTest {
     public void setUp() {
         FirefoxOptions options = new FirefoxOptions();
         options.setHeadless(true);
-        driver = new FirefoxDriver();
+        driver = new FirefoxDriver(options);
         js = (JavascriptExecutor) driver;
         vars = new HashMap<String, Object>();
     }
@@ -45,6 +44,7 @@ public class SearchImdbTest {
         //driver.manage().window().setSize(new Dimension(858, 859));
 
         // 3 | type | id=suggestion-search | wandavision
+        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         driver.findElement(By.id("suggestion-search")).sendKeys("wandavision");
 
         // 4 | sendKeys | id=suggestion-search | ${KEY_ENTER}
@@ -63,12 +63,9 @@ public class SearchImdbTest {
         driver.findElement(By.linkText("WandaVision")).click();
 
         // 6 | click | linkText=TRIVIA |
+        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         driver.findElement(By.linkText("TRIVIA")).click();
 
-        // 7 | click | linkText=136 of 139 found this interesting |
-        driver.findElement(By.linkText("136 of 139 found this interesting")).click();
 
-        //Espera implicita de unos segundos para ver la pagina
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 }

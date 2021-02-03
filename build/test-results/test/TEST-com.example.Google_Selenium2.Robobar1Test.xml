@@ -1,40 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.Google_Selenium2.Robobar1Test" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-02-03T15:16:53" hostname="ubuntu" time="11.407">
+<testsuite name="com.example.Google_Selenium2.Robobar1Test" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-02-03T17:49:49" hostname="ubuntu" time="11.138">
   <properties/>
-  <testcase name="robobartest1()" classname="com.example.Google_Selenium2.Robobar1Test" time="11.407"/>
+  <testcase name="robobartest1()" classname="com.example.Google_Selenium2.Robobar1Test" time="11.138"/>
   <system-out><![CDATA[prueba no realizada, ya que no hay 1 bebida de cada
 ]]></system-out>
-  <system-err><![CDATA[1612365413731	geckodriver	INFO	Listening on 127.0.0.1:9629
-1612365413785	mozrunner::runner	INFO	Running command: "/usr/lib/firefox/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile7XEI9C"
+  <system-err><![CDATA[1612374589952	geckodriver	INFO	Listening on 127.0.0.1:17383
+1612374589991	mozrunner::runner	INFO	Running command: "/usr/lib/firefox/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileHzAtLM"
 *** You are running in headless mode.
 
-(firefox:39087): GLib-GObject-WARNING **: 16:16:54.474: invalid (NULL) pointer instance
+(firefox:70142): GLib-GObject-WARNING **: 18:49:50.688: invalid (NULL) pointer instance
 
-(firefox:39087): GLib-GObject-CRITICAL **: 16:16:54.475: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+(firefox:70142): GLib-GObject-CRITICAL **: 18:49:50.689: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
 
-(/usr/lib/firefox/firefox:39342): GLib-GObject-WARNING **: 16:16:55.374: invalid (NULL) pointer instance
+(/usr/lib/firefox/firefox:70381): GLib-GObject-WARNING **: 18:49:51.585: invalid (NULL) pointer instance
 
-(/usr/lib/firefox/firefox:39342): GLib-GObject-CRITICAL **: 16:16:55.374: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+(/usr/lib/firefox/firefox:70381): GLib-GObject-CRITICAL **: 18:49:51.585: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
 
-(/usr/lib/firefox/firefox:39357): GLib-GObject-WARNING **: 16:16:55.622: invalid (NULL) pointer instance
+(/usr/lib/firefox/firefox:70396): GLib-GObject-WARNING **: 18:49:51.890: invalid (NULL) pointer instance
 
-(/usr/lib/firefox/firefox:39357): GLib-GObject-CRITICAL **: 16:16:55.622: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+(/usr/lib/firefox/firefox:70396): GLib-GObject-CRITICAL **: 18:49:51.890: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
 
-(/usr/lib/firefox/firefox:39422): GLib-GObject-WARNING **: 16:16:58.017: invalid (NULL) pointer instance
+(/usr/lib/firefox/firefox:70461): GLib-GObject-WARNING **: 18:49:54.567: invalid (NULL) pointer instance
 
-(/usr/lib/firefox/firefox:39422): GLib-GObject-CRITICAL **: 16:16:58.017: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
-
-(/usr/lib/firefox/firefox:39423): GLib-GObject-WARNING **: 16:16:58.151: invalid (NULL) pointer instance
-
-(/usr/lib/firefox/firefox:39423): GLib-GObject-CRITICAL **: 16:16:58.152: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
-1612365418294	Marionette	INFO	Listening on port 38377
-1612365418354	Marionette	WARN	TLS certificate errors will be ignored for this session
-Feb 03, 2021 4:16:58 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+(/usr/lib/firefox/firefox:70461): GLib-GObject-CRITICAL **: 18:49:54.567: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1612374594910	Marionette	INFO	Listening on port 37545
+1612374595054	Marionette	WARN	TLS certificate errors will be ignored for this session
+Feb 03, 2021 6:49:55 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'MarionetteEvents'
 JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
 JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
-1612365424109	Marionette	INFO	Stopped listening on port 38377
+1612374600015	Marionette	INFO	Stopped listening on port 37545
 ]]></system-err>
 </testsuite>

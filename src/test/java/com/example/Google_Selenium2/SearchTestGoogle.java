@@ -17,6 +17,7 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
 
 public class SearchTestGoogle {
 
@@ -27,7 +28,7 @@ public class SearchTestGoogle {
     public void setUp() {
         FirefoxOptions options = new FirefoxOptions();
         options.setHeadless(true);
-        driver = new FirefoxDriver();
+        driver = new FirefoxDriver(options);
         js = (JavascriptExecutor) driver;
         vars = new HashMap<String, Object>();
     }
@@ -44,18 +45,21 @@ public class SearchTestGoogle {
         // 2 | setWindowSize | 858x855 |
         //driver.manage().window().setSize(new Dimension(858, 855));
         // 3 | selectFrame | index=0 |
+        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         driver.switchTo().frame(0);
         // 4 | click | css=#introAgreeButton .RveJvd |
+        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         driver.findElement(By.cssSelector("#introAgreeButton .RveJvd")).click();
         // 5 | selectFrame | relative=parent |
         driver.switchTo().defaultContent();
         // 6 | click | name=q |
+        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         driver.findElement(By.name("q")).click();
         // 7 | type | name=q | devops
+        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         driver.findElement(By.name("q")).sendKeys("devops");
         // 8 | sendKeys | name=q | ${KEY_ENTER}
+        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         driver.findElement(By.name("q")).sendKeys(Keys.ENTER);
-        // 9 | click | xpath=//div[@id='tads']/div/div/div/div/a/div |
-        driver.findElement(By.cssSelector(".fdYsqf > .cfxYMc")).click();
     }
 }
