@@ -5,6 +5,7 @@ import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.*;
+import org.openqa.selenium.firefox.FirefoxOptions;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -24,6 +25,8 @@ public class MainPageTest {
 
     @BeforeEach
     public void setUp() {
+        FirefoxOptions options = new FirefoxOptions();
+        options.setHeadless(true);
         Configuration.startMaximized = true;
         open("https://www.jetbrains.com/");
     }

@@ -13,16 +13,20 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class SearchTestGoogle {
+
     private WebDriver driver;
     private Map<String, Object> vars;
     JavascriptExecutor js;
     @BeforeEach
     public void setUp() {
+        FirefoxOptions options = new FirefoxOptions();
+        options.setHeadless(true);
         driver = new FirefoxDriver();
         js = (JavascriptExecutor) driver;
         vars = new HashMap<String, Object>();

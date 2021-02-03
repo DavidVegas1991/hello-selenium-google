@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.example.Google_Selenium2.Robobar1Test" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-02-03T12:58:44" hostname="ubuntu" time="14.505">
+<testsuite name="com.example.Google_Selenium2.Robobar1Test" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-02-03T14:59:36" hostname="ubuntu" time="17.082">
   <properties/>
-  <testcase name="robobartest1()" classname="com.example.Google_Selenium2.Robobar1Test" time="14.505"/>
+  <testcase name="robobartest1()" classname="com.example.Google_Selenium2.Robobar1Test" time="17.082"/>
   <system-out><![CDATA[prueba no realizada, ya que no hay 1 bebida de cada
 ]]></system-out>
-  <system-err><![CDATA[1612357125976	geckodriver	INFO	Listening on 127.0.0.1:10675
-1612357126989	mozrunner::runner	INFO	Running command: "/usr/lib/firefox/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileLdqjDJ"
+  <system-err><![CDATA[1612364378138	geckodriver	INFO	Listening on 127.0.0.1:27329
+1612364378864	mozrunner::runner	INFO	Running command: "/usr/lib/firefox/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileBTFqgu"
 *** You are running in headless mode.
 
-(firefox:14019): GLib-GObject-WARNING **: 13:58:47.849: invalid (NULL) pointer instance
+(firefox:34157): GLib-GObject-WARNING **: 15:59:39.904: invalid (NULL) pointer instance
 
-(firefox:14019): GLib-GObject-CRITICAL **: 13:58:47.849: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+(firefox:34157): GLib-GObject-CRITICAL **: 15:59:39.905: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
 
-(/usr/lib/firefox/firefox:14284): GLib-GObject-WARNING **: 13:58:48.818: invalid (NULL) pointer instance
+(/usr/lib/firefox/firefox:34204): GLib-GObject-WARNING **: 15:59:41.027: invalid (NULL) pointer instance
 
-(/usr/lib/firefox/firefox:14284): GLib-GObject-CRITICAL **: 13:58:48.818: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+(/usr/lib/firefox/firefox:34204): GLib-GObject-CRITICAL **: 15:59:41.027: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
 
-(/usr/lib/firefox/firefox:14303): GLib-GObject-WARNING **: 13:58:49.029: invalid (NULL) pointer instance
+(/usr/lib/firefox/firefox:34223): GLib-GObject-WARNING **: 15:59:41.301: invalid (NULL) pointer instance
 
-(/usr/lib/firefox/firefox:14303): GLib-GObject-CRITICAL **: 13:58:49.029: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+(/usr/lib/firefox/firefox:34223): GLib-GObject-CRITICAL **: 15:59:41.301: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1612364383777	Marionette	INFO	Listening on port 46845
 
-(/usr/lib/firefox/firefox:14362): GLib-GObject-WARNING **: 13:58:51.462: invalid (NULL) pointer instance
+(/usr/lib/firefox/firefox:34293): GLib-GObject-WARNING **: 15:59:43.806: invalid (NULL) pointer instance
 
-(/usr/lib/firefox/firefox:14362): GLib-GObject-CRITICAL **: 13:58:51.462: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
-1612357131480	Marionette	INFO	Listening on port 33065
-1612357131603	Marionette	WARN	TLS certificate errors will be ignored for this session
-Feb 03, 2021 1:58:51 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+(/usr/lib/firefox/firefox:34293): GLib-GObject-CRITICAL **: 15:59:43.806: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1612364383860	Marionette	WARN	TLS certificate errors will be ignored for this session
+Feb 03, 2021 3:59:44 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'MarionetteEvents'
 JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
 JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
-1612357138088	Marionette	INFO	Stopped listening on port 33065
+1612364391697	Marionette	INFO	Stopped listening on port 46845
 ]]></system-err>
 </testsuite>

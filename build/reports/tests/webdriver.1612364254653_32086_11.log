@@ -1,0 +1,26 @@
+1612364255238	geckodriver	INFO	Listening on 127.0.0.1:18498
+1612364255295	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilewRCRTJ"
+*** You are running in headless mode.
+
+(firefox:33375): GLib-GObject-WARNING **: 15:57:35.784: invalid (NULL) pointer instance
+
+(firefox:33375): GLib-GObject-CRITICAL **: 15:57:35.784: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib/firefox/firefox:33431): GLib-GObject-WARNING **: 15:57:36.434: invalid (NULL) pointer instance
+
+(/usr/lib/firefox/firefox:33431): GLib-GObject-CRITICAL **: 15:57:36.434: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(/usr/lib/firefox/firefox:33662): GLib-GObject-WARNING **: 15:57:36.665: invalid (NULL) pointer instance
+
+(/usr/lib/firefox/firefox:33662): GLib-GObject-CRITICAL **: 15:57:36.665: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:33727): GLib-GObject-WARNING **: 15:57:38.858: invalid (NULL) pointer instance
+
+(/usr/lib/firefox/firefox:33727): GLib-GObject-CRITICAL **: 15:57:38.858: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+1612364258867	Marionette	INFO	Listening on port 36643
+1612364258992	Marionette	WARN	TLS certificate errors will be ignored for this session
+1612364266089	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: resource:///modules/FaviconLoader.jsm, line 596: InvalidStateError: JSWindowActorChild.sendAsyncMessage: JSWindowActorChild cannot send at the moment
+JavaScript error: resource:///modules/FaviconLoader.jsm, line 596: InvalidStateError: JSWindowActorChild.sendAsyncMessage: JSWindowActorChild cannot send at the moment
+1612364280434	Marionette	INFO	Stopped listening on port 36643
