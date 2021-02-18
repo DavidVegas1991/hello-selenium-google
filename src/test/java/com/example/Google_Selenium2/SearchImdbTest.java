@@ -5,12 +5,11 @@ package com.example.Google_Selenium2;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -54,13 +53,11 @@ public class SearchImdbTest {
 
         // 5 | click | linkText=WandaVision |
 
-        //espera explicita
-        //WebElement WVWait = new WebDriverWait(driver, 5).until(ExpectedConditions.elementToBeClickable(By.linkText("WandaVIsion")));
-
 
         //esperaimplicita de 10 segundos a que cargue la pagina
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driver.findElement(By.linkText("WandaVision")).click();
+        //driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS); linkText=WandaVision
+        WebElement WVWait = new WebDriverWait(driver, 5).until(ExpectedConditions.elementToBeClickable(By.linkText("WandaVision")));
+        //driver.findElement(By.linkText("WandaVision")).click();
 
         // 6 | click | linkText=TRIVIA |
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
